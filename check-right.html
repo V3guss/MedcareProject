@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ตรวจสอบสิทธิ์การรักษา | Medcare</title>
+
+    <!-- Boxicons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="bx bx-pharmacy"></i>
+            </div>
+            Medcare
+        </div>
+
+        <div class="menu">
+            <a href="index.html">หน้าแรก</a>
+            <a href="check-right.html" class="active">ตรวจสอบสิทธิ์</a>
+            <a href="#">ปรึกษาแพทย์</a>
+            <a href="#">ใบสั่งยา</a>
+            <a href="personal-info.html">ข้อมูลส่วนตัว</a>
+            <a href="#">การรับยา</a>
+            <a href="#">ช่วยเหลือ</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">ช่วยเหลือ</a>
+            <button class="login-btn">เข้าสู่ระบบ</button>
+        </div>
+
+    </nav>
+
+
+    <!-- Check Right Section -->
+    <main class="check-page">
+
+        <div class="check-container">
+
+            <div class="check-icon">
+                <i class="bx bx-check-circle" ></i>
+            </div>
+
+            <h1>ตรวจสอบสิทธิ์การรักษา</h1>
+
+            <p class="check-description">
+                ตรวจสอบสิทธิ์การรักษาของคุณก่อนเข้ารับบริการ
+                เพื่อให้ทราบว่าสามารถใช้สิทธิ์การรักษาได้หรือไม่
+            </p>
+
+
+            <div class="check-card">
+
+                <label for="citizen-id">
+                    เลขบัตรประชาชน
+                </label>
+
+                <input
+                    type="text"
+                    id="citizen-id"
+                    maxlength="13"
+                    placeholder="กรอกเลขบัตรประชาชน 13 หลัก"
+                >
+
+                <button class="check-btn" onclick="checkRight()">
+                    <i class="bx bx-search"></i>
+                    ตรวจสอบสิทธิ์
+                </button>
+
+                <p id="result"></p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div>
+            <h3>Medcare</h3>
+            <p>ดูแลสุขภาพง่าย ๆ ได้ทุกที่</p>
+        </div>
+
+        <div>
+            <h3>บริการ</h3>
+            <p>ตรวจสอบสิทธิ์</p>
+            <p>ปรึกษาแพทย์</p>
+            <p>ใบสั่งยาออนไลน์</p>
+        </div>
+
+        <div>
+            <h3>ช่วยเหลือ</h3>
+            <p>คำถามที่พบบ่อย</p>
+            <p>ติดต่อเรา</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

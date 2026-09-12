@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ข้อมูลส่วนตัวและสุขภาพ | Medcare</title>
+
+    <!-- Boxicons -->
+    <link
+        href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="personal-info.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                +
+            </div>
+
+            <span>Medcare</span>
+        </a>
+
+
+        <div class="menu">
+
+            <a href="index.html">
+                หน้าแรก
+            </a>
+
+            <a href="check-right.html">
+                ตรวจสอบสิทธิ์
+            </a>
+
+            <a href="personal-info.html" class="active">
+                ข้อมูลสุขภาพ
+            </a>
+
+            <a href="#">
+                ใบสั่งยา
+            </a>
+
+        </div>
+
+
+        <div class="nav-right">
+
+            <a href="#">
+                ช่วยเหลือ
+            </a>
+
+            <button class="login-btn">
+                เข้าสู่ระบบ
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="personal-page">
+
+        <div class="personal-container">
+
+
+            <!-- Icon -->
+
+            <div class="personal-icon">
+                <i class="bx bx-user"></i>
+            </div>
+
+
+            <!-- Heading -->
+
+            <h1>
+                ข้อมูลส่วนตัวและสุขภาพ
+            </h1>
+
+            <p class="description">
+                กรุณากรอกข้อมูลของคุณให้ครบถ้วน
+                เพื่อใช้ในการรับบริการทางการแพทย์
+            </p>
+
+
+            <!-- ================= FORM CARD ================= -->
+
+            <div class="personal-card">
+
+
+                <!-- ข้อมูลส่วนตัว -->
+
+                <h2>
+                    <i class="bx bx-user"></i>
+                    ข้อมูลส่วนตัว
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <!-- ชื่อ -->
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            ชื่อ
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="กรอกชื่อ"
+                        >
+
+                        <small
+                            class="error"
+                            id="firstNameError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- นามสกุล -->
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            นามสกุล
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="กรอกนามสกุล"
+                        >
+
+                        <small
+                            class="error"
+                            id="lastNameError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- เพศ -->
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            เพศ
+                        </label>
+
+                        <select id="gender">
+
+                            <option value="">
+                                เลือกเพศ
+                            </option>
+
+                            <option value="ชาย">
+                                ชาย
+                            </option>
+
+                            <option value="หญิง">
+                                หญิง
+                            </option>
+
+                            <option value="ไม่ระบุ">
+                                ไม่ระบุ
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="error"
+                            id="genderError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- วันเกิด -->
+
+                    <div class="form-group">
+
+                        <label for="birthDate">
+                            วันเกิด
+                        </label>
+
+                        <input
+                            type="date"
+                            id="birthDate"
+                        >
+
+                        <small
+                            class="error"
+                            id="birthDateError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- เบอร์โทร -->
+
+                    <div class="form-group full">
+
+                        <label for="phone">
+                            เบอร์โทรศัพท์
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            maxlength="10"
+                            placeholder="กรอกเบอร์โทรศัพท์ 10 หลัก"
+                        >
+
+                        <small
+                            class="error"
+                            id="phoneError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= HEALTH ================= -->
+
+                <h2 class="health-title">
+                    <i class="bx bx-heart"></i>
+                    ข้อมูลสุขภาพ
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <!-- น้ำหนัก -->
+
+                    <div class="form-group">
+
+                        <label for="weight">
+                            น้ำหนัก (กก.)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="weight"
+                            placeholder="เช่น 60"
+                        >
+
+                        <small
+                            class="error"
+                            id="weightError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- ส่วนสูง -->
+
+                    <div class="form-group">
+
+                        <label for="height">
+                            ส่วนสูง (ซม.)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="height"
+                            placeholder="เช่น 170"
+                        >
+
+                        <small
+                            class="error"
+                            id="heightError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- โรคประจำตัว -->
+
+                    <div class="form-group full">
+
+                        <label for="disease">
+                            โรคประจำตัว
+                        </label>
+
+                        <textarea
+                            id="disease"
+                            placeholder="กรอกโรคประจำตัว หรือกรอก 'ไม่มี'"
+                        ></textarea>
+
+                        <small
+                            class="error"
+                            id="diseaseError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- แพ้ยา -->
+
+                    <div class="form-group full">
+
+                        <label for="allergy">
+                            ประวัติแพ้ยา
+                        </label>
+
+                        <textarea
+                            id="allergy"
+                            placeholder="กรอกประวัติแพ้ยา หรือกรอก 'ไม่มี'"
+                        ></textarea>
+
+                        <small
+                            class="error"
+                            id="allergyError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= BUTTON ================= -->
+
+                <button
+                    type="button"
+                    class="save-btn"
+                    onclick="savePersonalInfo()"
+                >
+
+                    <i class="bx bx-save"></i>
+
+                    บันทึกข้อมูล
+
+                </button>
+
+
+                <!-- Result -->
+
+                <p
+                    id="save-result"
+                    class="save-result">
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="personal-info.js"></script>
+
+</body>
+</html>

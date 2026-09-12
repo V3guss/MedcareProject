@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medcare</title>
+
+    <link rel="stylesheet" href="style.css">
+     <!-- Boxicons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+          rel="stylesheet">
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon"><i class="bx bx-pharmacy"></i></span>
+            <span>Medcare</span>
+        </div>
+
+        <nav class="menu">
+
+            <a href="index.html" class="active">
+                หน้าหลัก
+            </a>
+
+            <a href="check-right.html">
+                 ตรวจสอบสิทธิ์
+            </a>
+
+            <a href="#">
+                ปรึกษาแพทย์
+            </a>
+
+            <a href="#">
+                ใบสั่งยา
+            </a>
+
+            <a href="#">
+                ข้อมูลส่วนตัว
+            </a>
+
+            <a href="#">
+                การรับยา
+            </a>
+
+            <a href="#">
+                ช่วยเหลือ
+            </a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <span>ช่วยเหลือ</span>
+
+            <button class="login-btn">
+                เข้าสู่ระบบ
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                ดูแลสุขภาพง่าย ๆ ได้ทุกที่
+            </h1>
+
+            <p>
+                Medcare — ดูแลสุขภาพง่าย ๆ ได้ทุกที่ เข้าถึงบริการทางการแพทย์
+                ปรึกษาแพทย์ผู้เชี่ยวชาญ และขอรับบริการได้ตลอด 24 ชั่วโมง
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="check-right.html" class="btn-primary">
+                    ตรวจสอบสิทธิ์การรักษา
+                </a>
+
+                <button
+                    class="btn-secondary"
+                    onclick="consultDoctor()">
+                    ปรึกษาแพทย์ออนไลน์
+                </button>
+
+                <button
+                    class="btn-outline">
+                    ดูเพิ่มเติม
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="assets/doctor.jpg"
+                alt="แพทย์กำลังดูแลผู้ป่วย">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services">
+
+        <div class="section-heading">
+
+            <h2>
+                บริการเด่นของเรา
+            </h2>
+
+            <p>
+                เข้าถึงบริการด้านสาธารณสุขและการดูแลสุขภาพเบื้องต้น
+                ได้อย่างสะดวกและปลอดภัย
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="service-card">
+
+                <div class="icon-box">
+                    <i class="bx bx-check-shield" ></i>
+                </div>
+
+                <h3>
+                    ตรวจสอบสิทธิ์
+                </h3>
+
+                <p>
+                    ตรวจสอบสิทธิ์การรักษาพยาบาล
+                    และข้อมูลสำหรับการเข้ารับบริการ
+                </p>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="service-card">
+
+                <div class="icon-box">
+                    <i class="bx bx-message-bubble-heart" ></i>
+                </div>
+
+                <h3>
+                    ปรึกษาแพทย์
+                </h3>
+
+                <p>
+                    ปรึกษาแพทย์ผ่านระบบออนไลน์
+                    เพื่อรับคำแนะนำเบื้องต้น
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="service-card">
+
+                <div class="icon-box">
+                     <i class="bx bx-file-detail" ></i>
+                </div>
+
+                <h3>
+                    ใบสั่งยาออนไลน์
+                </h3>
+
+                <p>
+                    ดูรายการยาและใบสั่งยาออนไลน์
+                    พร้อมดาวน์โหลดเอกสาร
+                </p>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="service-card">
+
+                <div class="icon-box">
+                     <i class="bx bx-hospital"></i>
+                </div>
+
+                <h3>
+                    รับยาที่คลินิก
+                </h3>
+
+                <p>
+                    เลือกรับยาตามสถานพยาบาล
+                    ที่สะดวกใกล้บ้าน
+                </p>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+
+            <div class="service-card">
+
+                <div class="icon-box">
+                     <i class="bx bx-truck" ></i>
+                </div>
+
+                <h3>
+                    จัดส่งถึงบ้าน
+                </h3>
+
+                <p>
+                    อำนวยความสะดวกสำหรับผู้ป่วย
+                    ด้วยบริการจัดส่งยาถึงบ้าน
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <!-- COLUMN 1 -->
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+
+                    <span class="logo-icon">
+                        <i class="bx bx-pharmacy" ></i>
+                    </span>
+
+                    <span>
+                        Medcare
+                    </span>
+
+                </div>
+
+                <p>
+                    ระบบบริการสุขภาพออนไลน์ที่ช่วยให้คุณ
+                    เข้าถึงบริการทางการแพทย์ได้สะดวก
+                    รวดเร็ว และปลอดภัย
+                </p>
+
+            </div>
+
+
+            <!-- COLUMN 2 -->
+
+            <div class="footer-column">
+
+                <h4>
+                    บริการของเรา
+                </h4>
+
+                <a href="#">
+                    ตรวจสอบสิทธิ์การรักษา
+                </a>
+
+                <a href="#">
+                    ปรึกษาแพทย์ออนไลน์
+                </a>
+
+                <a href="#">
+                    ใบสั่งยาออนไลน์
+                </a>
+
+                <a href="#">
+                    รับยาที่คลินิก
+                </a>
+
+                <a href="#">
+                    จัดส่งถึงบ้าน
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 3 -->
+
+            <div class="footer-column">
+
+                <h4>
+                    เกี่ยวกับเรา
+                </h4>
+
+                <a href="#">
+                    เกี่ยวกับ Medcare
+                </a>
+
+                <a href="#">
+                    ติดต่อเรา
+                </a>
+
+                <a href="#">
+                    ระบบงานของเรา
+                </a>
+
+                <a href="#">
+                    คำถามที่พบบ่อย
+                </a>
+
+            </div>
+
+
+            <!-- COLUMN 4 -->
+
+            <div class="footer-column">
+
+                <h4>
+                    ติดต่อเจ้าหน้าที่
+                </h4>
+
+                <p>
+                    เบอร์โทร: 1330 (สายด่วน)
+                </p>
+
+                <p>
+                    อีเมล: contact@medcare.go.th
+                </p>
+
+                <p>
+                    เวลาทำการ: บริการทุกวัน 24 ชั่วโมง
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Medcare. ระบบบริการสุขภาพออนไลน์
+            </span>
+
+            <div>
+
+                <a href="#">
+                    ข้อกำหนดและเงื่อนไขการใช้งาน
+                </a>
+
+                <a href="#">
+                    นโยบายความเป็นส่วนตัว
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
